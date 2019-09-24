@@ -9,3 +9,5 @@ The firmware has been modified in two ways:
   - Modify the system font
   - Change menu titles
   - Call new bitmaps
+
+Bitmaps derived from (and inspired by) Majurca's [MKS-TFT28-NEW-PICTURES](https://github.com/majurca/MKS-TFT28-NEW-PICTURES).
