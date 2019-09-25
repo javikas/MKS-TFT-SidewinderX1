@@ -183,10 +183,10 @@ It will auto heat up if the current temp doesn't reach the target.
 >cfg_background_color:0x000000
 
 #the color of title text
->cfg_title_color:0xAFAFAF
+>cfg_title_color:0xE59C66
 
 #the color of temperature,fan,(etc) background
->cfg_state_background_color:0x000000
+>cfg_state_background_color:0x232323
 
 #the color of temprature,fan,(etc) text
 >cfg_state_text_color:0xFFFFFF
