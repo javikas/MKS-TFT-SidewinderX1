@@ -13,6 +13,6 @@ MKS-TFT Mod for Sidewinder X1
 <img align="left" src="imgs/Main_Settings.png" />
 <img align="left" src="imgs/Main_Settings_Drive.png" />
 <img align="left" src="imgs/Main_Settings_Fan.png" />
-<img align="left" src="imgs/Main_Printing.png" />
-<img align="left" src="imgs/Main_Printing_Tune.png" />
-<img align="left" src="imgs/Main_Printing_Tune_More.png" />
+<img align="left" src="imgs/Printing.png" />
+<img align="left" src="imgs/Printing_Tune.png" />
+<img align="left" src="imgs/Printing_Tune_More.png" />
