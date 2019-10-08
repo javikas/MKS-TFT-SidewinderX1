@@ -1,4 +1,4 @@
-﻿#--------------------------------------------------------------------
+﻿#------------------------------------------------------------------
 #########  Printer type setting  ##################################
 
 #mainboard firmware setting(marlin:1; repetier:2; smoothie:3)
@@ -32,7 +32,7 @@
 >cfg_YPOS:-1
 >cfg_ZADD:10
 
-#-----------------------------------------------------------------------
+#----------------------------------------------------------------------
 #########  Advanced Function Option  ##################################
 
 #enable UPS?(yes:1; no:0)
@@ -53,8 +53,7 @@
 #set error range of Z-axis on breakpoints recovery
 >cfg_breakpoint_z_error:0.2
 
-#---------------------------------------------------------------------------
-
+#------------------------------------------------------------------
 #########  Filament Change Function  ##############################
 
 #the speed to extrude filament(mm/min)
@@ -77,8 +76,7 @@ It will auto heat up if the current temp doesn't reach the target.
 #The speed of load filament  before unloader filament.
 >cfg_unload_retract_speed:500
 
-#---------------------------------------------------------------------------
-
+#------------------------------------------------------------------------
 ############  Leveling Function  ########################################
 
 #leveling mode(manual:0; auto:1; conceal leveling button:2)
@@ -101,8 +99,7 @@ It will auto heat up if the current temp doesn't reach the target.
 >cfg_leveling_z_speed:1500
 >cfg_leveling_xy_speed:8000
 
-#---------------------------------------------------------------------------
-
+#-----------------------------------------------------------------------
 #############  WIFI Function  ##########################################
 
 #wifi model(MKS WIFI TFT:0;  MKS HLK-WIFI:1)
@@ -130,8 +127,7 @@ It will auto heat up if the current temp doesn't reach the target.
 >cfg_ip_mask:255.255.255.0
 >cfg_ip_gate:192.168.3.1
 
-#--------------------------------------------------------------------------------
-
+#----------------------------------------------------------------------------
 ############## Function Customization #######################################
 
 #user-defined function1 and 2.(display this button .  disable: 0; enable: 1) (settings, last button)
@@ -149,7 +145,7 @@ It will auto heat up if the current temp doesn't reach the target.
 #Preheat PETG
 >moreitem_button2_cmd:M104 S210 E0; M140 S75;
 #Preheat ABS
->moreitem_button3_cmd:M104 S240 E0; M140 S100;
+>moreitem_button3_cmd:M104 S240 E0; M140 S90;
 #Cooldown
 >moreitem_button4_cmd:M104 S0 E0; M140 S0;
 #Motors off
@@ -176,13 +172,13 @@ It will auto heat up if the current temp doesn't reach the target.
 #Nothing
 >morefunc6_cmd:G28;
 
-#---------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------
 ##### Display Customization(button and logo customized see User's Manual) #######
 
 #the color of screen background
 >cfg_background_color:0x000000
 
-#the color of title text
+#the color of title text (669CE5 if this assholes weren't assholes)
 >cfg_title_color:0xE59C66
 
 #the color of temperature,fan,(etc) background
