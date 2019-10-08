@@ -131,10 +131,10 @@ It will auto heat up if the current temp doesn't reach the target.
 ############## Function Customization #######################################
 
 #user-defined function1 and 2.(display this button .  disable: 0; enable: 1) (settings, last button)
->cfg_function_btn1_display:0
+>cfg_function_btn1_display:1
 
 #command of user-defined function
->function_btn1_cmd:G28;
+>function_btn1_cmd:M502; M500;
 
 #set number of  "More" button
 >moreitem_pic_cnt:7
