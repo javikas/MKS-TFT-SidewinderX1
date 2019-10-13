@@ -80,7 +80,7 @@ It will auto heat up if the current temp doesn't reach the target.
 ############  Leveling Function  ########################################
 
 #leveling mode(manual:0; auto:1; conceal leveling button:2)
->cfg_leveling_mode:0
+>cfg_leveling_mode:1
 
 #the command of auto leveling (G29 is available for Marlin.While G32 is for  Repetier and Smoothieware)
 >cfg_auto_leveling_cmd:G28;G29;
@@ -140,35 +140,35 @@ It will auto heat up if the current temp doesn't reach the target.
 >moreitem_pic_cnt:7
 
 #edit command for 1~7 "More" button,each command must be separated by semicolon ";"
-#Preheat PLA.
->moreitem_button1_cmd:M104 S190 E0; M140 S60;
-#Preheat PETG
->moreitem_button2_cmd:M104 S210 E0; M140 S75;
-#Preheat ABS
->moreitem_button3_cmd:M104 S240 E0; M140 S90;
-#Cooldown
->moreitem_button4_cmd:M104 S0 E0; M140 S0;
+#Start Z offset.
+>moreitem_button1_cmd:G28; G91; G0 X28 Y-33; G90; G1 Z0;
+#Baby step up
+>moreitem_button2_cmd:M290 Z0.025;
+#Baby step down
+>moreitem_button3_cmd:M290 Z-0.025;
+#Save to EEPROM
+>moreitem_button4_cmd:M500;
 #Motors off
 >moreitem_button5_cmd:M84;
-#Led on/off
->moreitem_button6_cmd:M950;
-#Led change color
->moreitem_button7_cmd:M951;
+#Preheat all
+>moreitem_button6_cmd:M104 S210 E0; M140 S70;
+#Cooldown
+>moreitem_button7_cmd:M104 S0 E0; M140 S0;
 
 #how many "More" button display on screen interface
->morefunc_cnt:5
+>morefunc_cnt:3
 
 #command setting on button1~6
-#Led on/off
->morefunc1_cmd:M950;
-#Led change color
->morefunc2_cmd:M951;
 #Baby step Up
->morefunc3_cmd:M290 Z0.025;
+>morefunc1_cmd:M290 Z0.025;
 #Baby step Down
->morefunc4_cmd:M290 Z-0.025;
+>morefunc2_cmd:M290 Z-0.025;
 #Save to EEPROM
->morefunc5_cmd:M500;
+>morefunc3_cmd:M500;
+#Nothing
+>morefunc4_cmd:G28;
+#Nothing
+>morefunc5_cmd:G28;
 #Nothing
 >morefunc6_cmd:G28;
 
