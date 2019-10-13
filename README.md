@@ -1,5 +1,5 @@
 # MKS-TFT-SidewinderX1
-MKS-TFT Mod for Sidewinder X1
+MKS-TFT Mod for Sidewinder X1-ABL
 
 The original Makerbase firmware is not open source. This is only a mod of the compiled binary released for the Artillery Sidewinder X1.
 
