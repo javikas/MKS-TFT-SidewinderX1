@@ -83,7 +83,7 @@ It will auto heat up if the current temp doesn't reach the target.
 >cfg_leveling_mode:1
 
 #the command of auto leveling (G29 is available for Marlin.While G32 is for  Repetier and Smoothieware)
->cfg_auto_leveling_cmd:G28;G29;
+>cfg_auto_leveling_cmd:G28;G29;G0 X0 Y0 F6000;
 
 #the point number of manual leveling:(3,4,5 point available)
 >cfg_point_number:5
@@ -141,7 +141,7 @@ It will auto heat up if the current temp doesn't reach the target.
 
 #edit command for 1~7 "More" button,each command must be separated by semicolon ";"
 #Start Z offset.
->moreitem_button1_cmd:G28; G91; G0 X28 Y-33; G90; G1 Z0;
+>moreitem_button1_cmd:G28; G91; G0 X-20 Y-7; G90; G1 Z0;
 #Baby step up
 >moreitem_button2_cmd:M290 Z0.025;
 #Baby step down
